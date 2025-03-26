@@ -61,7 +61,7 @@ class Dompdf_gen extends Controller
     // Folio	 folio         $dompdf->setPaper('folio');
     // Custom    (medidas)     $dompdf->setPaper([ancho, alto]);
     
-    $dompdf->setPaper('A4', 'landscape');
+    $dompdf->setPaper('legal', 'landscape');
     // $dompdf->setPaper(array(0,0,792.00, 1224.00), 'portrait');
     // array(0, 0, 595, 841), 'portrait'
     // 6. Renderizar el PDF

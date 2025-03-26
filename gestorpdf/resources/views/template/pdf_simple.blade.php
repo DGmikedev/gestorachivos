@@ -89,6 +89,10 @@
                             <li> $options = new Options();       <span style="color:blue;">// Se crea una instancía  de Options de DOM-PDF</span></li>
                             <li>$options->set('isPhpEnabled', true);          <span style="color:blue;">// Habilitar PHP dentro de HTML (si es necesario)</span></li>
                             <li>$options->set('isHtml5ParserEnabled', true);  <span style="color:blue;">// Habilitar análisis HTML5</span></li>
+                            <li>$options->set('isRemoteEnabled', true); <span style="color:blue;">// Para habilitar funciones como imgs y otras.</span></li>
+                            <li>$options->set('isJavascriptEnabled', true);     <span style="color:blue;">// Habilita la ejecucion de javascript</span></li>
+                            <li>$options->set('isFontSubsettingEnabled', true); <span style="color:blue;">// Habilita la subconjunto de fuentes</span></li>
+                            <li>$options->set('isCssFloatEnabled', true);       <span style="color:blue;">// Habilita la interpretacion de css float</span></li>
                         </ul>
                     </td>
                     <td>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,15 @@
 </head>
 
 <style>
+
+    :root{
+        --color-destacado:  #e74c3c;
+        --color-grs-destacar: #ebedef;
+        --tamanio-text-general: 12px
+    }
    /* Texto de uso en forma general del PDF   tbl_left txt_body */
    .txt_body{
-        font-size:13px
+        font-size: var(--tamanio-text-general);
     }
 
     .tbl_left{   
@@ -24,16 +30,16 @@
         width:100%;
         text-align: left;
         border:collapse;
-        border-top: 1px #c0392b solid;
+        border-top: 1px var(--color-destacado) solid;
         ;
     }
 
     .color_denotar{
-        background-color:#ebedef;
+        background-color: var(--color-grs-destacar);
     }
 
     .ltrs_rosas{
-        color:#c0392b ;
+        color: var(--color-destacado);
     }
 
     .mensaje{
@@ -71,44 +77,43 @@ html{
 }
 
 </style>
-
 <body>
     <table class="table_snborde">
         <tr>
-          <td> <img src="{{ $logo_gobierno  }}" alt="logo"> </td>
+          <td> <p> <img src="{{ asset('imgs/logo1.png')  }}" width="120px" height="65px" > </p></td>
           <td><span class="ltrs_rosas">
             SECRETARÍA DE PLANEACIÓN, FINANZAS Y ADMINISTRACIÓN<br>
             DEL GOBIERNO DEL ESTADO DE PUEBLA</span> <br>
             ORDEN DE COBRO
           </td>
-          <td> LOGO</td>
+          <td> <img src="{{ asset('imgs/logo2.png')  }}" width="60px" height="80px" ></td>
         </tr>
       </table>
 
     <table class=" tbl_left txt_body">
         <tr>
           <td>NOMBRE DEL CONTRIBUYENTE:</td>
-          <td></td>
-          <td>FOLIO DE SEGUIMIENTO::</td>
-          <td></td>
+          <td> {{ $data['_fullname'] }}</td>
+          <td>FOLIO DE SEGUIMIENTO:</td>
+          <td> {{ $data['_folioseguimiento'] }} </td>
         </tr>
         <tr>
           <td>RFC:</td>
-          <td></td>
+          <td> {{ $data['_rfc']  }}</td>
           <td>CURP:</td>
-          <td></td>
+          <td> {{ $data['_curp'] }}</td>
         </tr>
         <tr>
           <td>DESCRIPCIÓN DEL SERVICIO:</td>
-          <td></td>
+          <td>{{ $data['_descservicio']  }}</td>
           <td>NO. DE MOVIMIENTOS:</td>
-          <td></td>
+          <td> {{ $data['_movs'] }}</td>
         </tr>
         <tr>
           <td>VIGENCIA DE LA REFERENCIA:</td>
-          <td></td>
-          <td>EMISIÓN DE LA REFERENCIA::</td>
-          <td></td>
+          <td> {{ $data['_vigenciareferencia'] }}</td>
+          <td>EMISIÓN DE LA REFERENCIA:</td>
+          <td> {{ $data['_folioseguimiento'] }}</td>
         </tr>
       </table>
 
@@ -123,6 +128,9 @@ html{
         <tr>
           <td>CONCEPTO DE PAGO SPEI:</td>
           <td>13525146337745399268</td>
+          <td rowspan="3">
+            <img src="{{ asset('imgs/LOGOSPEI.png') }}" width="80px" height="30px"   alt="logo3">
+          </td>
         </tr>
         <tr>
           <td>REFERENCIA SPEI:</td>
@@ -132,11 +140,13 @@ html{
           <td>BANCO BENEFICIARIO O DESTINO:</td>
           <td>BBVA | GOBIERNO DEL ESTADO DE PUEBLA</td>
         </tr>
+
         <tr>
           <td>CUENTA CLABE BENEFICIARIA O DESTINO:</td>
           <td>012914002006715170</td>
-          <td rowspan="3">LOGO SPEI</td>
+          
         </tr>
+
     </table>
     <table class="tbl_left" style="padding:2px" >
         <tr>
@@ -149,7 +159,7 @@ html{
         width:100%; 
         border: 1px solid #ebedef;
         border-collapse: collapse;
-        font-size: 12px;
+        font-size: 11px;
         "
     >
         <tr>
@@ -191,12 +201,53 @@ html{
     </table>
     <table style="width:100%">
         <tr>
-        <td  style="width: 10%;" >LOGO 1</td>
-        <td  style="width: 10%;" >LOGO 2</td>
-        <td  style="width: 10%;" >LOGO 3</td>
-        <td  style="width: 10%;" >LOGO 4</td>
-        <td  style="width: 10%;" >LOGO 5</td>
-        <td  style="width: 50%; text-align:right;" >LOGO 6</td> </tr>
+        <td>
+            <img src="{{ asset('imgs/cintillo.png')  }}" width="100%" height="90px" >
+        </td>
+        </tr>
+    </table>
+
+    <table width="100%" style=" border-bottom: 1px #c0392b solid " >
+        <tr>
+            <td class="ltrs_rosas" style=" font-size:10px; text-align:center;">
+                EVITE REALIZAR EL PAGO DE ESTA ORDEN DE COBRO EN INSTITUCIONES QUE NO SE CITEN EN ESTE DOCUMENTO
+            </td>
+        </tr>
+    </table>
+
+    <table style="border-bottom: 1px #c0392b solid; width:100%">
+        <tr 
+        class="txt_body"
+        style="
+            font-size: 10px;
+        "
+        >
+            <td>ESTIMADO CONTRIBUYENTE:</td>
+        </tr>
+        <tr class="color_denotar" 
+        style="
+        font-size: 10px;
+
+        "
+        >
+            <td>
+                1) REVISE QUE LOS DATOS AQUÍ ASENTADOS SEAN CORRECTOS ANTES DE REALIZAR SU PAGO. 2) EL NÚMERO DE REFERENCIA, CONVENIO E IMPORTE SON INDISPENSABLES PARA REALIZAR
+                SU PAGO EN INSTITUCIONES BANCARIAS. 3) ANTES DE SALIR DEL LUGAR DONDE REALIZÓ SU PAGO, REVISE QUE LA REFERENCIA, EL CONVENIO Y EL MONTO IMPRESOS EN EL COMPROBANTE
+                QUE SE LE EXPIDA SEAN CORRECTOS. 4) DOS DÍAS HÁBILES DESPUÉS DE HABER REALIZADO SU PAGO PODRÁ IMPRIMIR SU COMPROBANTE FISCAL ELECTRÓNICO EN LA PÁGINA
+                https://rl.puebla.gob.mx CONSULTANDO SU REFERENCIA. 5) AL REALIZAR SU PAGO CON TARJETA DE CRÉDITO O DÉBITO A TRAVÉS DEL PORTAL DE LA SECRETARÍA DE PLANEACIÓN Y FINANZAS,
+                OBTENDRÁ EL COMPROBANTE FISCAL DE FORMA INMEDIATA. 6) PARA REALIZAR SU PAGO SPEI REFERENCIADO, ES NECESARIO QUE EN SU BANCA ELECTRÓNICA:
+                - Capture exactamente el concepto del pago tal y como está mostrado en esta orden de cobro (20 dígitos) sin dejar espacios.
+                - Registre la CLABE y banco beneficiario o destino con los datos mostrados en este formato antes de intentar el pago.
+                - Que el importe a pagar se capture exactamente como está especificado en esta orden.</td>
+        </tr>
+    </table>
+
+    <table width="100%">
+        <tr>
+            <td>
+                <img src="{{ asset('imgs/cintillo2.png') }}"  width="100%" height="95px" alt="">
+            </td<
+        </tr>
     </table>
 
     

@@ -13,17 +13,23 @@ class OrdenPago extends Controller
         $options = new Options();
         $options->set('isPhpEnabled', true);
         $options->set('isHtml5ParserEnabled', true);
+        $options->set('isRemoteEnabled', true); // Para habilitar la ejecucion de funciones para enlaces remotas
+        // $options->set('isJavascriptEnabled', true); // Para habilitar la ejecucion de funciones javascript
+        // $options->set('isFontSubsettingEnabled', true); // Para habilitar la subconjunto de fuentes
+        // $options->set('isCssFloatEnabled', true); // Para habilitar la interpretacion de css float
 
         $pdf = new Dompdf($options);
 
         $data = [
-            '_fullname'=> 'José Jacinto Reyes Martinez',
+            '_fullname'=> 'JOSÉ JESÚS MONCAYO GUTIERREZ',
             '_descservicio' => 'IE DIGITAL MODULO DE DIPLOMADO EN LÍNEA',
             '_refbancaria' => '84436055228634288157',
             '_vigenciareferencia' => '14/03/2025',
             '_folioseguimiento' => '5739Z6612',
             '_curp' => 'FGCD67UIU7HDFMTG09',
-            '_emisionreferecnia' => '13/03/2025'
+            '_emisionreferecnia' => '13/03/2025',
+            '_movs' => '1',
+            '_rfc' => 'REMJ670313HDFRZS09',
         ];
 
         $instituciones = [
@@ -37,13 +43,14 @@ class OrdenPago extends Controller
             [ "SCOTIABANK"      , "1089"            , "NO PARTICIPA" , "$ 6.00 + IVA",  "$ 7.00 + IVA",  "$ 7.00 + IVA",  "$ 7.00 + IVA"]
         ];
 
-        $logo_gobierno = asset('imgs/logo_puebla.png');
+        // $logo_gobierno = asset('imgs/logo_puebla.png');
+
         $financiera =  [ "FINANCIERA BIENESTAR (TELECOMM)", "$ 4.00 + IVA por pagos con importe igual o menor a $ 267.00, en los demás casos será del 1.5 % del valor del importe más IVA."];
 
 
         $nombre_pdf = 'ORDEN_PAGO_'.$data['_curp'].'_'. date('Ymd') . '.pdf';
 
-        $html = view('template.pdf_orden_de_pago', compact("instituciones", "financiera", "logo_gobierno"))->render();
+        $html = view('template.pdf_orden_de_pago', compact("instituciones", "financiera", "data"))->render();
 
         $pdf->loadHtml( $html );
 
@@ -53,7 +60,6 @@ class OrdenPago extends Controller
 
         $pdf->stream($nombre_pdf, array("Attachment" => 1)); // 7. Descargar el
 
-        // return "Hola mundo";
-
+        //  https://styde.net/genera-pdfs-en-laravel-con-el-componente-dompdf/
     }
 }
