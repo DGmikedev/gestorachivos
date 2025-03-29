@@ -91,12 +91,14 @@
             height: 10cm;
             text-align: center;
   }
+
+
   .cuerpo{
     position:fixed;
             bottom: 12.8cm;
             left: .25cm;
             right: 0.25cm;
-            height: 10cm;
+            height: 10cm;    
             text-align: center;
   }
 
@@ -233,7 +235,7 @@
       <td width="10%" >Valor unitario</td>
       <td width="10%" >Importe</td>
     </tr>
-    @for($i=0; $i<7; $i++)
+    @for($i=0; $i<6; $i++)
     <tr style=" text-align:left; font-size: var(--mediana); height:200px; vertical-align:top;">
       <td style="padding-top:10px; padding-left:5px;"  width="7%" >{{ $i }}</td>
       <td style="padding-top:10px"  width="7%" >100</td>
@@ -337,107 +339,3 @@
 </body>
 
 </html>
-
-<!--
-
-
-
-  
-<style>
-        @page {
-            margin: 0cm 0cm;
-            font-family: Arial;
-        }
-
-        body {
-            margin: 3cm 2cm 2cm;
-        }
-
-        header {
-            position: fixed;
-            top: 0cm;
-            left: 0cm;
-            right: 0cm;
-            height: 2cm;
-            background-color: #2a0927;
-            color: white;
-            text-align: center;
-            line-height: 30px;
-        }
-
-        footer {
-            position: fixed;
-            bottom: 0cm;
-            left: 0cm;
-            right: 0cm;
-            height: 2cm;
-            background-color: #2a0927;
-            color: white;
-            text-align: center;
-            line-height: 35px;
-        }
-    </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla con tamaño fijo</title>
-    <style>
-        /* Estilo para la tabla */
-        table {
-            width: 100%; /* Ancho 100% */
-            height: 40vh; /* 40% de la altura de la ventana */
-            border-collapse: collapse; /* Para un borde continuo */
-            border: 1px solid black; /* Borde de 1px negro */
-        }
-
-        /* Estilo para las celdas */
-        td, th {
-            border: 1px solid black; /* Borde de las celdas */
-            padding: 8px; /* Espaciado dentro de las celdas */
-            text-align: center; /* Centrar texto */
-        }
-
-        /* Estilo de la fila vacía de la tabla */
-        tr.empty {
-            height: 100%; /* Asegura que ocupe toda la altura disponible */
-        }
-    </style>
-</head>
-<body>
-    <table>
-        <thead>
-            <tr>
-                <th>Encabezado 1</th>
-                <th>Encabezado 2</th>
-            </tr>
-        </thead>
-        <tbody>
-           
-          Si no tienes datos, usa una fila vacía para mantener el tamaño 
-
-
-            <tr class="empty">
-                <td colspan="2">No hay datos</td>
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
--->
