@@ -29,7 +29,7 @@ class Mpdf{
         $this->test    = $test_;
     }
 
-    public function generaPDF(){
+    public function generaPDF($data){
 
         $options = new Options();
 
@@ -54,7 +54,7 @@ class Mpdf{
         $pdf = new Dompdf($options);
 
         // genera la vista del path pasado por parametros
-        $html =  view($this->view)->render();
+        $html =  view($this->view, compact('data'))->render();
 
         // carga le vista y la renderiza en un html
         $pdf->loadHtml($html);

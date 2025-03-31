@@ -15,7 +15,12 @@ class FacturaController extends Controller
 
         $pdf = new Mpdf('factura_t.pdf', ['A4', 'portrait'], 'template.pdf_factura', true,  [true, true, true, true, true, true] );
 
-        return $pdf->generaPDF();
+
+        $titulo_factura = "OBTENER FACTURA";
+
+        $data = [$titulo_factura];
+
+        return $pdf->generaPDF($data);
 
 
         /*
