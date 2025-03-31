@@ -95,15 +95,18 @@
 
   .cuerpo{
     position:fixed;
-            bottom: 12.8cm;
-            left: .25cm;
-            right: 0.25cm;
-            height: 10cm;    
-            text-align: center;
+    bottom: 12.8cm;
+    left: .25cm;
+    right: 0.25cm;
+    height: 10cm;    
+    text-align: center;
   }
 
   .page-break {
       page-break-before: always;
+    }
+    .contenedor_body{
+      height: 1200px;
     }
 </style>
 <body>
@@ -222,31 +225,33 @@
 </header>
 
 <div class="cuerpo">
-  <table class="tbl-linea-resaltado" width="100%" heigth="100%">
-    <tr class="resaltado tr-contenido" height="100px"
-        style="text-align:left;
-               font-size: var(--chica);
-               
-    ">
-      <td width="7%" >Id </td>
-      <td width="7%" >Cantidad</td>
-      <td width="10%" >Unidad</td>
-      <td width="56%" >Descripción</td>
-      <td width="10%" >Valor unitario</td>
-      <td width="10%" >Importe</td>
-    </tr>
-    @for($i=0; $i<6; $i++)
-    <tr style=" text-align:left; font-size: var(--mediana); height:200px; vertical-align:top;">
-      <td style="padding-top:10px; padding-left:5px;"  width="7%" >{{ $i }}</td>
-      <td style="padding-top:10px"  width="7%" >100</td>
-      <td style="padding-top:10px"  width="10%">pieza</td>
-      <td style="padding-top:10px"  width="46%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum at voluptates dignissimos provident doloremque repudiandae reiciendis quasi accusantium aliquid? Nesciunt nihil fuga maxime necessitatibus molestias esse aspernatur nostrum alias. </td>
-      <td style="padding-top:10px"  width="15%">$15,000</td>
-      <td style="padding-top:10px; padding-rigth:5px;"  width="15%">$ 1,300,000.00</td>
-    </tr>
-    @endfor
-    
-  </table>
+  <div class="tbl-linea-resaltado" style="height:490px;" >
+    <table  width="100%;">
+      <tr class="resaltado tr-contenido" height="100px"
+          style="text-align:left;
+                 font-size: var(--chica);
+
+      ">
+        <td width="7%" >Id </td>
+        <td width="7%" >Cantidad</td>
+        <td width="10%" >Unidad</td>
+        <td width="56%" >Descripción</td>
+        <td width="10%" >Valor unitario</td>
+        <td width="10%" >Importe</td>
+      </tr>
+      @for($i=0; $i<2; $i++)
+      <tr style=" text-align:left; font-size: var(--mediana); vertical-align:top;" class="contenedor_body">
+          <td style="padding-top:10px; padding-left:5px;"  width="7%" >{{ $i }} </td>
+          <td style="padding-top:10px"  width="7%" >100</td>
+          <td style="padding-top:10px"  width="10%">pieza</td>
+          <td style="padding-top:10px"  width="46%">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem laborum at voluptates dignissimos provident doloremque repudiandae reiciendis quasi accusantium aliquid? Nesciunt nihil fuga maxime necessitatibus molestias esse aspernatur nostrum alias. </td>
+          <td style="padding-top:10px"  width="15%">$15,000</td>
+          <td style="padding-top:10px; padding-rigth:5px;"  width="15%">$ 1,300,000.00</td>
+      </tr>
+      @endfor
+    </table>
+  </div>
+
   <br>
 
 </div>

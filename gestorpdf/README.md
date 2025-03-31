@@ -13,5 +13,3 @@ Clase_usada: /app/Clases/Mpdf.php
 ```
 
 ![alt text](image.png)
-
-
