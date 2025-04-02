@@ -48,10 +48,9 @@
                 left: 0px; 
                 right: 0px;
                 height: 50px; 
-                font-size: 20px !important;
+                font-size: 12px !important;
               /*   background-color: #000; */
                 color: #000000;
-                text-align: center;
               /*  line-height: 35px;  */
             }
             .tbl{
@@ -82,7 +81,19 @@
     </header>
 
     <footer>
-        Copyright © <?php echo date("Y");?> - techsolutionstuff.com
+        <table style=" margin: 0 auto; width:100%;">
+            <tr>
+                <td style="text-align:left;">
+                    Dirección falsa 123 Col. Falsa<br>
+                    Alcaldia Falsa. C.P. 00000 Ciudad de México<br>
+                    Tel. 55-125125478
+
+                </td>
+                <td style="text-align:right;">
+                    CIUDAD <b>INOVADORA</B><br> Y DE <b>DERECHOS</b>
+                </td>
+            </tr>
+        </table>
     </footer>
 
     <!-- Wrap the content of your PDF inside a main tag -->
@@ -159,6 +170,10 @@
                 <tr><td>&lt;audio&gt;</td>	    <td>Block</td>	        <td>Reproductor de audio.</td></tr>
             </table>
         </div>
+        <p style="page-break-after: never;">
+        <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, eveniet voluptatem. Veniam voluptatibus aut, ad minima molestiae laborum eum totam laboriosam placeat modi facere dolorum ratione fuga repudiandae vero eligendi.
+        Eaque itaque quisquam voluptates quam, maiores nisi asperiores ut suscipit vitae fugiat, velit beatae eligendi quos soluta perferendis magnam adipisci inventore incidunt repudiandae doloribus quod! Debitis et necessitatibus accusamus soluta?
+        Placeat minus necessitatibus enim sed ex perspiciatis iusto fugiat voluptate, debitis tempora ipsa dolorum eaque magnam quo et consequuntur autem corporis quae labore velit amet expedita quibusdam dolorem repellendus. Necessitatibus.</p>
     </main>
 </body>
 </html>
@@ -201,25 +216,24 @@
         </style>
     </head>
     <body>
-        <!-- Define header and footer blocks before your content -->
+
         <header>
-            {{$title}}
+
         </header>
 
         <footer>
-            Copyright © <?php echo date("Y");?> - techsolutionstuff.com
+
         </footer>
 
-        <!-- Wrap the content of your PDF inside a main tag -->
+
         <main>
-            <h3>What is Lorem Ipsum?</h3>
-            <p style="page-break-after: always;">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
-            <h3>Where does it come from?</h3>
+            Contenido
+
+
+            <!-- Salto de pagina -->
             <p style="page-break-after: never;">            
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-            </p>
+
+
         </main>
     </body>
 </html>    
