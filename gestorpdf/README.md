@@ -25,4 +25,4 @@ Clase_usada: /app/Clases/Mpdf.php
 
 ```
 
-![alt text](image.png)
+![alt text](public/imgs/demo_factura_una_pagina.png)
