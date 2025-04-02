@@ -5,11 +5,14 @@
 
 url:     /membretada
 Router:  Route::get('/membretada', [MembretadaController::class, 'gen_membretada']);
-view:  /app/Http/Controllers/MembretadaController.php
+view:    resources/views/template/pdf_membretada.blade.php
+Controller:  /app/Http/Controllers/MembretadaController.php
 Clase_usada: /app/Clases/Mpdf.php
 
 ```
+
 ![alt text](public/imgs/demo_membretada_multi_pagina.png)
+
 
 ## Factura de uan sola página
 
