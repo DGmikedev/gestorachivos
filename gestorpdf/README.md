@@ -1,6 +1,4 @@
 
-![alt text](image-1.png)
-
 ## Orden de pago de una sola página
 
 ```bash
@@ -12,12 +10,27 @@ Controller:  app/Http/Controllers/OrdenPago.php
 Clase_usada: /app/Clases/Mpdf.php
 
 ```
+![alt text](image-1.png)
+
+
+
+## Membretada
+
+```bash  
+
+url:     /membretada
+Router: Route::get('/membretada', [MembretadaController::class, 'gen_membretada']);
+view:   resources/views/template/pdf_membreatda.blade.php
+Controller:  app/Http/Controllers/MembretadaController.php
+Clase_usada: /app/Clases/Mpdf.php
+
+```
 
 
 ![alt text](public/imgs/demo_membretada_multi_pagina.png)
 
 
-## Factura de uan sola página
+## Factura de una sola página
 
 ### Solo una pagina por factura
 ( Oportunidad para hacerla multipagina )
