@@ -29,37 +29,36 @@
         }
        
 
-            header {
-                position: fixed;
-                top: -70px;
-                left: 0px;
-                right: 0px;
-                height: 70px;
-                font-size: var(--fnt-grande) !important;
-                background-color: #ffffff;
-                color: rgb(0, 0, 0);
-                text-align: center;
-            /*    line-height: 60px; */
-            }
+        header {
+            position: fixed;
+            top: -70px;
+            left: 0px;
+            right: 0px;
+            height: 70px;
+            font-size: var(--fnt-grande) !important;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        /*    line-height: 60px; */
+        }
 
-            footer {
-                position: fixed; 
-                bottom: -60px; 
-                left: 0px; 
-                right: 0px;
-                height: 50px; 
-                font-size: 12px !important;
-              /*   background-color: #000; */
-                color: #000000;
-              /*  line-height: 35px;  */
-            }
-            .tbl{
-                /* border: 1px solid black; */
-                width:90%;
-                color:block;
-                
-
-            }
+        footer {
+            position: fixed; 
+            bottom: -60px; 
+            left: 0px; 
+            right: 0px;
+            height: 50px; 
+            font-size: 12px !important;
+          /*   background-color: #000; */
+            color: #000000;
+          /*  line-height: 35px;  */
+        }
+        .tbl{
+            /* border: 1px solid black; */
+            width:90%;
+            color:block;
+            
+        }
     </style>
 </head>
 <body>

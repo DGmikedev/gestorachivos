@@ -60,7 +60,8 @@ class Mpdf{
         $pdf->loadHtml($html);
 
         // ajusta el tamaño y alineación del papel
-        $pdf->setPaper($this->paper[0], $this->paper[1]);
+
+         $pdf->setPaper($this->paper[0], $this->paper[1]);
 
         // Renderizar el PDF
         $pdf->render(); 
