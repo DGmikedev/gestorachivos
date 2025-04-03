@@ -30,7 +30,7 @@ Clase_usada: /app/Clases/Mpdf.php
 ![alt text](public/imgs/demo_membretada_multi_pagina.png)
 
 
-## Credencial - 
+## Credencial - Portrait 5.4cm X 8.6cm
 
 ```bash  
 
