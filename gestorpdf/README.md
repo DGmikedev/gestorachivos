@@ -30,6 +30,24 @@ Clase_usada: /app/Clases/Mpdf.php
 ![alt text](public/imgs/demo_membretada_multi_pagina.png)
 
 
+## Credencial - 
+
+```bash  
+
+url:     /credencial
+Router: Route::get('/credencial', [CredencialController::class, 'gen_credencial']);
+view:   resources/views/template/pdf_credencial.blade.php
+Controller:  app/Http/Controllers/CredencialController.php
+Clase_usada: /app/Clases/Mpdf.php
+
+```
+
+![alt text](image-2.png)
+
+
+
+
+
 ## Factura de una sola página
 
 ### Solo una pagina por factura

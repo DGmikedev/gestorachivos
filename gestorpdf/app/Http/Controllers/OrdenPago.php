@@ -60,6 +60,5 @@ class OrdenPago extends Controller
 
         $pdf->stream($nombre_pdf, array("Attachment" => 1)); // 7. Descargar el
 
-        //  https://styde.net/genera-pdfs-en-laravel-con-el-componente-dompdf/
     }
 }
