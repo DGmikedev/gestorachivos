@@ -1,15 +1,18 @@
-## Membrete multipagina
 
-( Tiene cabecera, pie de página )
+![alt text](image-1.png)
+
+## Orden de pago de una sola página
+
 ```bash
 
-url:     /membretada
-Router:  Route::get('/membretada', [MembretadaController::class, 'gen_membretada']);
-view:    resources/views/template/pdf_membretada.blade.php
-Controller:  /app/Http/Controllers/MembretadaController.php
+url:     /orden_pago
+Router: Route::get('/orden_pago', [OrdenPago::class, "genera_orden"]);
+view:   resources/views/template/pdf_orden_de_pago.blade.php
+Controller:  app/Http/Controllers/OrdenPago.php
 Clase_usada: /app/Clases/Mpdf.php
 
 ```
+
 
 ![alt text](public/imgs/demo_membretada_multi_pagina.png)
 
