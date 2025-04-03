@@ -41,8 +41,7 @@ Controller:  app/Http/Controllers/CredencialController.php
 Clase_usada: /app/Clases/Mpdf.php
 
 ```
-
-![alt text](image-2.png)
+![alt text](public/imgs/demo_credencial_multi_pagina.png)
 
 
 
