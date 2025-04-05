@@ -62,3 +62,19 @@ Clase_usada: /app/Clases/Mpdf.php
 ```
 
 ![alt text](public/imgs/demo_factura_una_pagina.png)
+
+## Convertidor de PDF a Base 64
+
+### Listo para guardar en BDT´s
+```bash
+
+url:     /pdf_form
+Router: Route::view('/pdf_form', 'manipulatepdf.pdf_basesixtyfour');  < vista
+        Route::post('/pdf2base64', [ManipulateController::class, 'pdf2base64']); < endpoint
+view:   resources/views/manipulatepdf/pdf_basesixtyfour.blade.php
+Controller: /app/Http/Controllers/ManipulateController.php
+Clase_usada: App/Clases/Pdf2data;
+
+```
+
+![alt text](public/imgs/demo_pdf_to_base64.png)
