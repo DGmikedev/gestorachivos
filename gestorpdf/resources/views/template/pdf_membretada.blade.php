@@ -95,7 +95,6 @@
         </table>
     </footer>
 
-    <!-- Wrap the content of your PDF inside a main tag -->
     <main>
         <br>
         <div style="text-align:right;  font-size: var(--fnt-chica); font-weight:bold;">
@@ -176,66 +175,3 @@
     </main>
 </body>
 </html>
-
-<?php
-/*
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <style>
-            @page {
-                margin: 100px 25px;
-            }
-
-            header {
-                position: fixed;
-                top: -60px;
-                left: 0px;
-                right: 0px;
-                height: 50px;
-                font-size: 20px !important;
-                background-color: #000;
-                color: white;
-                text-align: center;
-                line-height: 35px;
-            }
-
-            footer {
-                position: fixed; 
-                bottom: -60px; 
-                left: 0px; 
-                right: 0px;
-                height: 50px; 
-                font-size: 20px !important;
-                background-color: #000;
-                color: white;
-                text-align: center;
-                line-height: 35px;
-            }
-        </style>
-    </head>
-    <body>
-
-        <header>
-
-        </header>
-
-        <footer>
-
-        </footer>
-
-
-        <main>
-            Contenido
-
-
-            <!-- Salto de pagina -->
-            <p style="page-break-after: never;">            
-
-
-        </main>
-    </body>
-</html>    
-
-*/ 
-?>

@@ -1,0 +1,38 @@
+@page{
+    margin: 50px;
+}
+
+:root{ 
+    --color-marca: #4472c4;
+    --color-dark-marca:#315495;
+    --color-constrastante:#7030a1;
+    --color-resaltante:#fff3c7;
+    --fuente: 'Arial';
+}
+
+header{
+    
+    position:fixed;
+    top: -10px;
+    height:50px;
+    width:100%;
+    left: 0px;
+    right: 0px;
+    font-family: var(--fuente);
+    background-color:#245ea1; 
+
+}
+footer{
+    position:fixed;
+    bottom: 10px;
+    height:50px;
+    width:100%;
+    left: 0px;
+    right: 0px;
+    background-color:#245ea1;
+}
+main{
+    position:fixed;
+    top: 60px;
+}
+

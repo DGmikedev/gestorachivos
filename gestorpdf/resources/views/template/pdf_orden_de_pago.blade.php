@@ -246,7 +246,7 @@ html{
         <tr>
             <td>
                 <img src="{{ asset('imgs/cintillo2.png') }}"  width="100%" height="95px" alt="">
-            </td<
+            </td>
         </tr>
     </table>
 

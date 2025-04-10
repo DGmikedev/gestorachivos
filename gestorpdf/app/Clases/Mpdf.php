@@ -29,7 +29,7 @@ class Mpdf{
         $this->test    = $test_;
     }
 
-    public function generaPDF($data){
+    public function generaPDF($data = ""){
 
         $options = new Options();
 
