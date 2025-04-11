@@ -1,3 +1,8 @@
+# DOMPDF
+
+### Librearía ligera para usos poco elaborados, básicos y con contenid controlado
+
+Documentación: https://github.com/dompdf/dompdf
 
 ## Orden de pago de una sola página
 

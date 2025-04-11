@@ -1,3 +1,6 @@
+
+
+<!-- 
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -75,7 +78,72 @@
                 <td style="text-align:center; "><b>12,300</b></td>
                 <td style="text-align:center; "><b>12,300</b></td>
             </tr>
+            <tr><td></td><td colspan="13" style="color:white;">.</td></tr>
+            <tr><td style="text-align:LEFT;" >ENTRADA DE CAJA</td><td colspan="12"><hr></td></tr>
+            <tr><td></td><td colspan="13" style="color:white;">.</td></tr>
+            @for($i=0; $i<=11; $i++)
+            <tr>
+                <td>CONCEPTO DE ENTRADA {{ $i }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+                <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            </tr>
+            @endfor
         </table>
+        <p style="page-break-after: never;">
+        <table>
+        </tr>
+        <tr style="background-color:var(--color-constrastante); 
+                   height:60px; 
+                   border-left-color:var(--color-constrastante); 
+                   color:white;">
+
+            <td style="background-color:white; 
+                       color:black;
+                       font-size:18px"> Efectivo en caja al comenzar el balance: </td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+            <td style="text-align:center; "><b>12,300</b></td>
+        </tr>
+        <tr><td></td><td colspan="13" style="color:white;">.</td></tr>
+        <tr><td style="text-align:LEFT;" >ENTRADA DE CAJA</td><td colspan="12"><hr></td></tr>
+        <tr><td></td><td colspan="13" style="color:white;">.</td></tr>
+        @for($i=0; $i<=11; $i++)
+        <tr>
+            <td>CONCEPTO DE ENTRADA {{ $i }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+            <td>{{ number_format(rand(0,100)/1.5 , 2, ".", "," ) }}</td>
+        </tr>
+        @endfor
+    </table>
     </main>
    <footer>footer</footer>
 </body>
