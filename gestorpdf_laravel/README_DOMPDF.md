@@ -4,6 +4,10 @@
 
 Documentación: https://github.com/dompdf/dompdf
 
+```bash
+composer require dompdf/dompdf   
+```
+
 ## Orden de pago de una sola página
 
 ```bash
