@@ -8,25 +8,74 @@
     <title>Document</title>
 </head>
 <body>
-    <header>HOLA MUNDO</header>
+    <header>
+        <table width="100%">
+            <tr>
+                <td style="text-align:left; font-size:43px;"><b>REPORTE FLUJO DE CAJA</b></td>
+                <td style="text-align:right; font-size:43px;"><b>DICIEMBRE-</b></td>
+                <td style="text-align:left; font-size:43px;"><b>2025</b></td>
+            </tr>
+        </table>
+        <hr>
+    </header>
     
     <main>
-        <b>HOLA MUNDO</b>
-        <p style="page-break-after: never;">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi nam vitae corporis laborum fugit adipisci minus doloremque accusantium, sunt provident dolor repellat, rem dignissimos! Facere quaerat sint minus deleniti dolorum.
-            Excepturi assumenda quis laudantium totam aspernatur animi optio sit velit magnam veritatis enim quod exercitationem placeat asperiores vitae temporibus, nisi illo? In, voluptate expedita. Odit reiciendis quos et error recusandae!
-            Praesentium quidem cumque corporis corrupti quae vero, vel iure repellat libero voluptates dolore sint minus deserunt ut? Impedit illo adipisci tempore voluptas saepe fuga modi voluptatem, quas, incidunt labore animi.
-            At iste ducimus error, itaque molestiae consectetur ullam sit in! Saepe reiciendis earum repellendus laboriosam adipisci, aliquid nisi sint nulla minus, nemo optio modi quos ipsum fugit consequatur quam nostrum.
-            Maxime quisquam deleniti eum iure, eos nam autem voluptas, modi porro error tenetur! Quisquam dolores voluptate iste. Voluptate ea eius repellat commodi repellendus ipsa dolore, aut officia id necessitatibus odio.
-            Nobis iste sapiente corrupti libero dicta quaerat ducimus aliquam nisi molestias nihil. Doloribus saepe repellat iusto consequuntur nisi iure assumenda voluptatibus expedita dolores optio aspernatur, quibusdam, id fugit nostrum itaque?
-            Assumenda perspiciatis vel, possimus odit alias deleniti quod numquam ducimus animi aperiam hic iste, repellendus provident rem libero nihil at! Aspernatur deleniti nobis fugit omnis nisi reprehenderit a enim similique.
-            Provident porro adipisci quae alias nesciunt enim rerum, accusantium aliquam repellat, itaque quo illum similique qui voluptas id officia quis! Quam non fugiat magnam alias perferendis at ipsam quibusdam dolores.
-            Rem qui beatae vero ullam, at obcaecati expedita tenetur illum quasi quas dolorum, labore, cupiditate nisi ut illo. Deleniti, a numquam. Reiciendis vitae dignissimos, vel cum totam molestias atque. Fuga?
-            Dolorem quis atque, explicabo soluta ipsum neque odio. Corrupti quidem tempora animi distinctio dolorem! Nostrum sed incidunt beatae nemo natus eveniet numquam non provident, et facilis cum velit consectetur odio!
-        </p>
-        <p style="page-break-after: never;">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, aperiam minima nesciunt ratione odit, perferendis nisi esse repellat illo obcaecati dolor quisquam quam. Rerum quam fugiat, provident distinctio asperiores suscipit.Deserunt voluptatum corrupti assumenda expedita ipsam laboriosam in maiores, aperiam iusto, sequi, et accusantium! Nesciunt libero veritatis alias eum! Enim reprehenderit quos quas nobis velit exercitationem nemo consequatur labore itaque.
-        </p>|
+        <table width="100%" >
+            <tr style="font-size:35px; font-weight:bold; text-align:left;">
+                <td style="width:25%;" >15,310.00</td>
+                <td style="width:25%;" >12,400.00</td>
+                <td style="width:25%;" >2,910.00</td>
+                <td style="width:25%;" >
+                    IMG
+                </td>
+            </tr>
+            <tr style="text-align:left;">
+                <td>Entrada Efectivo</td>
+                <td>Salida Efectivo</td>
+                <td>Efectivo Neto</td>
+                <td>Historico</td>
+            </tr>
+        </table>
+        <hr width="100%">
+ 
+        <table width="100%">
+            <tr>
+                <td></td>
+                <td style="text-align:center; font-size:20px">ENE</td>
+                <td style="text-align:center; font-size:20px">FEB</td>
+                <td style="text-align:center; font-size:20px">MAR</td>
+                <td style="text-align:center; font-size:20px">ABR</td>
+                <td style="text-align:center; font-size:20px">MAY</td>
+                <td style="text-align:center; font-size:20px">JUN</td>
+                <td style="text-align:center; font-size:20px">JUL</td>
+                <td style="text-align:center; font-size:20px">AGS</td>
+                <td style="text-align:center; font-size:20px">SEP</td>
+                <td style="text-align:center; font-size:20px">OCT</td>
+                <td style="text-align:center; font-size:20px">NOV</td>
+                <td style="text-align:center; font-size:20px">DIC</td>
+            </tr>
+            <tr style="background-color:var(--color-constrastante); 
+                       height:60px; 
+                       border-left-color:var(--color-constrastante); 
+                       color:white;">
+
+                <td style="background-color:white; 
+                           color:black;
+                           font-size:18px"> Efectivo en caja al comenzar el balance: </td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+                <td style="text-align:center; "><b>12,300</b></td>
+            </tr>
+        </table>
     </main>
    <footer>footer</footer>
 </body>

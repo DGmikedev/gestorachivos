@@ -11,6 +11,8 @@ class ReporteController extends Controller
 
         $pdf = new Mpdf('credencial.pdf', ['official','landscape'], 'template.pdf_reporte', true,  [true, true, true, true, true, true] );
 
+        // return view('template.pdf_reporte');
+        
         $data = "Hola mundo";
         return $pdf->generaPDF($data);
 

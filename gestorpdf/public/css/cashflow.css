@@ -8,6 +8,7 @@
     --color-constrastante:#7030a1;
     --color-resaltante:#fff3c7;
     --fuente: 'Arial';
+    --fuente-constraste-claro:#fff;
 }
 
 header{
@@ -19,7 +20,7 @@ header{
     left: 0px;
     right: 0px;
     font-family: var(--fuente);
-    background-color:#245ea1; 
+   /* background-color:var(--color-marca) */
 
 }
 footer{
@@ -29,10 +30,18 @@ footer{
     width:100%;
     left: 0px;
     right: 0px;
-    background-color:#245ea1;
+    background-color:#ffffff;
 }
 main{
     position:fixed;
     top: 60px;
+    width:100%;
+}
+
+.vector{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    color:red;
 }
 
