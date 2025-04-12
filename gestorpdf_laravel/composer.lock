@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "824c994c6548727bb1d6e46720044a9a",
+    "content-hash": "8ff2680933c26c1beae720e02f940f56",
     "packages": [
         {
             "name": "brick/math",
@@ -3574,48 +3574,6 @@
             "time": "2025-03-23T17:59:05+00:00"
         },
         {
-            "name": "setasign/fpdf",
-            "version": "1.8",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Setasign/FPDF.git",
-                "reference": "a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDF/zipball/a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5",
-                "reference": "a8a76e8cfc1db7b1a18c096a021a0cdff70db6b5",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "fpdf.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "no usage restriction"
-            ],
-            "authors": [
-                {
-                    "name": "Olivier Plathey",
-                    "email": "oliver@fpdf.org",
-                    "homepage": "http://fpdf.org/"
-                }
-            ],
-            "description": "FPDF is a PHP class which allows to generate PDF files with pure PHP. F from FPDF stands for Free: you may use it for any kind of usage and modify it to suit your needs.",
-            "homepage": "http://www.fpdf.org",
-            "keywords": [
-                "fpdf",
-                "pdf"
-            ],
-            "support": {
-                "source": "https://github.com/Setasign/FPDF/tree/1.8"
-            },
-            "time": "2015-11-30T09:05:35+00:00"
-        },
-        {
             "name": "symfony/clock",
             "version": "v7.2.0",
             "source": {
@@ -5897,6 +5855,28 @@
                 "source": "https://github.com/tijsverkoyen/CssToInlineStyles/tree/v2.3.0"
             },
             "time": "2024-12-21T16:25:41+00:00"
+        },
+        {
+            "name": "utftfpdf/tfpdf",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/utftfpdf/tfpdf",
+                "reference": "e33fbd15c99b8a84e81ed7421e1b6b5297cc3ded"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "tFPDF - FPDF con soporte UTF-8 para Laravel",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "vlucas/phpdotenv",
@@ -8394,7 +8374,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "utftfpdf/tfpdf": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
