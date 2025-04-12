@@ -1,0 +1,11 @@
+{
+    "name": "utftfpdf/tfpdf",
+    "description": "tFPDF - FPDF con soporte UTF-8 para Laravel",
+    "type": "library",
+    "autoload": {
+      "classmap": ["."]
+    },
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true
+  }

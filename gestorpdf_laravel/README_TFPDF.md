@@ -53,6 +53,5 @@ composer require utftfpdf/tfpdf:dev-main
 
 ```
 
-NOTA: NO OLVIDAR ADJUNTAR AL ARCHVIO .gitignore LA CARPETA /PACKAGES PARA EVITAR SUBIR A LOS REPOSITORIOS
 
 
