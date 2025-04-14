@@ -37,7 +37,6 @@
   [pgsql  ] PostgreSQL
  > mysql
 
-
  Default database updated. Would you like to run the default database migrations? (yes/no) [yes]:
  > yes
 
