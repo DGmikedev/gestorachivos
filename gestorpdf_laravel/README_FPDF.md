@@ -138,6 +138,14 @@ function NbLines($w, $txt)
 * Multi línea en cada fila
 * Color en filas
 
+```bash
+url:     "/fpdf_tblmln"
+Router: "Route::get('/fpdf_tblmln', [TablasController::class, "create_tbmln"]);"
+Controller:  "app/Http/Controllers/TablasController.php"
+Clase_usada: "use App\Clases\Tablas;"
+"En la clase Tablas se invoca: use Fpdf\Fpdf;"
+```
+
 ![alt text](public/imgs/Listado-Reporte.png)
 
 
