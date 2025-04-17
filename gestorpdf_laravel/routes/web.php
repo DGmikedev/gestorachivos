@@ -9,6 +9,7 @@ use App\Http\Controllers\CredencialController;
 use App\Http\Controllers\ManipulateController;
 use App\Http\Controllers\TutorialController;
 use App\Http\Controllers\ReporteUnoController;
+use App\Http\Controllers\TablasController;
 
 Route::get('/', function () {return view('welcome'); });
 Route::get('/dompdf',  [Dompdf_gen::class, "genera_dompdf"] );
@@ -20,3 +21,4 @@ Route::view('/pdf_form', 'manipulatepdf.pdf_basesixtyfour');
 Route::post('/pdf2base64', [ManipulateController::class, 'pdf2base64']);
 Route::get("/fpdf", [TutorialController::class, "tutorial"]);
 Route::get('/reporteuno', [ReporteUnoController::class, "reporte"]);
+Route::get('/fpdf_tblmln', [TablasController::class, "create_tbmln"]);

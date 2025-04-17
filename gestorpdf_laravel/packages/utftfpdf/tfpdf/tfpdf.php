@@ -70,6 +70,11 @@ protected $metadata;           // document properties
 protected $CreationDate;       // document creation date
 protected $PDFVersion;         // PDF version number
 
+
+protected $widths;
+protected $aligns;
+
+
 /*******************************************************************************
 *                               Public methods                                 *
 *******************************************************************************/
@@ -2366,6 +2371,14 @@ protected function UTF8StringToArray($str) {
    }
    return $out;
 }
+
+	// TABLA MULTI LINEA PDF-MC-TABLE
+
+
+
+
+
+
 
 }
 ?>
